@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+
+#scene {
+  width: 600px;
+  height: 300px;
+  margin: auto ;
+  perspective: 2400px;
+  perspective-origin: center;
+  z-index: 1;
+}
+
+#cube {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 1s linear;
+  -webkit-transition: -webkit-transform 1s linear;
+  -webkit-transform-style: preserve-3d;
+   /*animation: rotate-360-270 1s linear forwards;*/
+}
+
+/* 
+ * TO DO: fix this hard code hack
+ * rotating faces via animations
+ */
+
+/* FORWARDS ANIMATIONS */
+.rotate-0-90 {
+  animation: rotate-0-90 1s linear forwards;
+}
+
+.rotate-90-180 {
+  animation: rotate-90-180 1s linear forwards;
+}
+
+.rotate-180-270 {
+  animation: rotate-180-270 1s linear forwards;
+}
+
+.rotate-270-0 {
+  animation: rotate-270-360 1s linear forwards;
+}
+
+
+/* BACKWARDS ANIMATIONS */
+.rotate-90-0 {
+  animation: rotate-90-0 1s linear forwards;
+}
+
+.rotate-180-90 {
+  animation: rotate-180-90 1s linear forwards;
+}
+
+.rotate-270-180 {
+  animation: rotate-270-180 1s linear forwards;
+}
+
+.rotate-0-270 {
+  animation: rotate-360-270 1s linear forwards;
+}
+
+
+
+.side {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  
+  box-sizing: border-box;
+  background-color:rgba(0, 0, 0, 0.15);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 240px 0;
+  font: 50px/1 'Trebuchet MS', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+.side span {
+  position: relative;
+}
+
+.back {
+  transform: translateZ(-150px) rotateX(180deg);
+  overflow-y: scroll;
+}
+.top {
+  transform: translateY(-150px) rotateX(90deg);
+  overflow-y: scroll;
+}
+.bottom {
+  transform: translateY(150px) rotateX(270deg);
+  overflow-y: scroll;
+}
+.front {
+  transform: translateZ(150px);
+  overflow-y: scroll;
+}
+
+.paused{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused; 
+  animation-play-state:paused;
+}
+
+@keyframes rotate {
+  0%  { transform: translateZ(-450px) rotateX(0deg); }
+  15% { transform: translateZ(-450px) rotateX(90deg); }
+  25% { transform: translateZ(-450px) rotateX(90deg); }
+  40% { transform: translateZ(-450px) rotateX(180deg); }
+  50% { transform: translateZ(-450px) rotateX(180deg); }
+  65% { transform: translateZ(-450px) rotateX(270deg); }
+  75% { transform: translateZ(-450px) rotateX(270deg); }
+  90% { transform: translateZ(-450px) rotateX(360deg); }
+  100% { transform: translateZ(-450px) rotateX(360deg); }
+}
+
+@media(max-width: 720px) {
+   .navbar{
+    width: 100%;
+  } 
+  
+  .blabla {
+   display: none;
+  }
+}

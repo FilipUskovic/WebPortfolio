@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.logo{
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-left: 12%;
+    padding-right: 12%;
+    position: relative;
+    z-index: 5;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+    z-index:  7;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+nav ul li a:hover{
+  color:#803dff;
+  transition: 3s;
+
+}
+.main-text{
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+    
+}
+
+.main-text h1{
+    font-size: 140px;
+    color: #3c3c3c;
+    font-weight: 800;
+    line-height: 170px;
+}
+
+/* .slika src{
+  background-color: wheat;
+    
+}  */
+
+span{
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.main-text p{
+    color: #737373;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 40px 0px;
+    background-repeat: no-repeat;
+
+}
+
+button {
+    width:  160px;
+    background-color: #803dff;
+    padding: 12px 10px;
+    border: none;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width 0.4s;
+}
+
+button a{
+    font-size: 14px;
+    text-align: end;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration-line: none;
+}
+
+
+button i{
+    width: 32px;
+    display: none;
+    
+}
+
+button:hover i{
+    display: block;
+}
+
+
+
+button:hover{
+    width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .main-img{
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+} */
+.main-img img{
+    height: 100%;
+   opacity: calc(200);
+
+}
+
+#main-footer{
+    padding-top: 0.5vh;
+
+}
+#main-footer p{
+    font-size: large;
+    text-align: center;
+}
+
+/* ANIMATED PLUS */
+.navbar-toggle.plus.collapsed .icon-bar:nth-of-type(1) {
+	transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggle.plus.collapsed .icon-bar:nth-of-type(2) {
+	transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggle.plus.collapsed .icon-bar:nth-of-type(3) {
+	transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggle.plus .icon-bar:nth-of-type(1) {
+	transform: translate3d(0px,6px,0) rotate(90deg);
+	transform-origin: center center;
+}
+
+.navbar-toggle.plus .icon-bar:nth-of-type(3) {
+	transform: translate3d(0px,-6px,0) rotate(-90deg);
+	transform-origin: center center;
+}
+
+
+
+
+@media (max-width:600px){
+    .main-text{
+        width: 100%;
+        float: none;
+        box-sizing: content-box;
+    }
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+
+    
+}
+

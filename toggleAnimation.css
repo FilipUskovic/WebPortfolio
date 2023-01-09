@@ -1,0 +1,172 @@
+
+
+.navbar-toggler span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+  }
+  
+  
+  
+  .navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+    
+    
+  }
+  
+  .navbar-toggler span:nth-child(2) {
+    opacity: 1;
+    width: 60%;
+   
+  }
+  
+  .navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+    
+  }
+  
+  .navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+   
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+    background-color: gold;
+   
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+    width: 60%;
+  
+   
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+    background-color: yellowgreen;
+    
+  }
+
+
+  .tockice{
+    list-style-type: square;
+  }
+
+
+  
+  #main-footer{
+    padding-top: 0.2%;
+
+}
+div .pt-2.col-4{
+    padding-right: 20%;
+}
+
+div .col.py-3{
+  padding-right: 30%;
+}
+
+
+
+
+/* stats.index*/
+
+.p-2.flexprvi{
+    animation: myAnim 2s ease 0s infinite normal forwards;
+    display: flex;
+   justify-items: center;
+    margin-left: 5.5vh;
+    margin-top: 5%;
+    border: 5px solid #3a1772;
+    border-radius: 10%;
+}
+.p-2.flexprv2{
+    animation: myAnim 2s ease 0s infinite normal forwards;
+    margin-left: 5.5vh;
+    margin-top: 5%;
+    border: 5px solid #3a1772;
+    border-radius: 10%;
+}
+.p-2.flexprv3{
+    animation: myAnim 2s ease 0s infinite normal forwards;
+    margin-left: 5.5vh;
+    margin-top: 5%;
+    border: 5px solid #3a1772;
+    border-radius: 10%;
+}
+
+.p-2.flexprv4{
+    animation: myAnim 2s ease 0s infinite normal forwards;
+    margin-left: 5.5vh;
+    margin-top: 5%;
+    border: 5px solid #3a1772;
+    border-radius: 10%;
+}
+
+
+
+/* Skills button animations */
+
+.animation .animation1{
+  animation: myAnim 3s ease-in 2s infinite alternate forwards;
+}
+
+.animation .animation1:hover{
+ padding-top: 2vh;
+ animation-play-state: paused;
+}
+
+
+
+@keyframes myAnim {
+	0% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+ @media(max-width: 576px){
+    
+    .smallScreen{
+         display: flex;
+         justify-content: center;   
+    }
+    .smallScreen1{
+        display: flex;
+        justify-content: center;
+      
+   }
+   .smallScreen2{
+    display: flex;
+    justify-content: center;
+}
+
+
+    .js{
+        display: flex;
+        align-items: center;
+    }
+
+    .Java{
+        display: flex;
+        align-items: center;
+    }
+    .sql{
+        display: flex;
+        align-items: center;
+    }
+    
+} 
